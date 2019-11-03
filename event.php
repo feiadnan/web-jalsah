@@ -17,13 +17,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta name="keywords"
         content="Majelis Jalsatul Itsnain Baa'alawy, Habib Umar Rofiq, Jalsatul Itsnain, Majelis Bandung" />
     <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
+    addEventListener("load", function() {
+        setTimeout(hideURLbar, 0);
+    }, false);
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
     </script>
 
     <!-- Bootstrap Core CSS -->
@@ -86,7 +86,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav text-center  ml-lg-auto">
                         <li class="nav-item active  mr-3">
-                            <a class="nav-link" href="index.html">Home
+                            <a class="nav-link" href="index.php">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -284,6 +284,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </div>
                             </div>
                         </div>
+
+
+                        <?php
+		     			$per_page = 9;
+		     			
+						if (isset($_GET["page"])) //ngecek ada page apa engga (bisa diliat di URL)
+							$page  = $_GET["page"]; //jika ada maka set si page nya
+						else  
+                            $page=1; //kalo ga ada, maka page itu di set jadi 1
+                            ?>
+
+
                         <!-- Pagination -->
                         <nav aria-label="Page navigation example">
                             <ul class="pagination pagination-template d-flex justify-content-center">

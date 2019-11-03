@@ -90,7 +90,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<a class="nav-link" href="contact.html">Media</a>
 						</li>
 						<li class="nav-item mr-3">
-							<a class="nav-link" href="event.html">Event</a>
+							<a class="nav-link" href="event.php?page=1">Event</a>
 						</li>
 						<li class="nav-item mr-3">
 							<a class="nav-link" href="login.html">Login</a>
